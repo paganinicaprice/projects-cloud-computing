@@ -1,7 +1,0 @@
-.terraform/
-.vs/
-terraform.tfstate
-terraform.tfstate.backup
-.terraform.lock.hcl
-siem-iam-cw-ct-policy/terraform.tfstate
-siem-iam-cw-ct-policy/terraform.tfstate.backup
