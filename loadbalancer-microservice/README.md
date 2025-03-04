@@ -32,9 +32,20 @@ The infrastructure is provisioned using Terraform, and the application runs on A
 ---
 
 ## Project Structure  
-
-loadbalancer-microservice/ │── terraform/ # Terraform configuration files │ ├── main.tf # Defines AWS infrastructure │ ├── variables.tf # Input variables for Terraform │ ├── outputs.tf # Terraform outputs │── .gitignore # Ignore unnecessary files │── .env # Environment variables (excluded from Git) │── Dockerfile # Docker build configuration │── app.py # Flask microservice code │── nginx.conf # Nginx reverse proxy configuration │── requirements.txt # Python dependencies │── README.md # Project documentation
-
+```md
+loadbalancer-microservice/
+├── terraform/              # Terraform configuration files
+│   ├── main.tf            # Defines AWS infrastructure
+│   ├── variables.tf       # Input variables for Terraform
+│   ├── outputs.tf         # Terraform outputs
+├── .gitignore              # Ignore unnecessary files
+├── .env                    # Environment variables (excluded from Git)
+├── Dockerfile              # Docker build configuration
+├── app.py                  # Flask microservice code
+├── nginx.conf              # Nginx reverse proxy configuration
+├── requirements.txt        # Python dependencies
+└── README.md               # Project documentation
+```
 ---
 
 ## How to Install and Run Locally  
