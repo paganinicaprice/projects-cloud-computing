@@ -32,7 +32,17 @@ The project is containerized using Docker and orchestrated with Kubernetes (Mini
 
 ## Project Structure
 ```md
-smtp-microservice/ │── k8s/ # Kubernetes configuration files │ ├── deployment.yaml # Defines Kubernetes Deployment │ ├── service.yaml # Service configuration (NodePort) │ ├── secret.yaml # SMTP secrets (Base64 encoded) │── .gitignore # Ignore unnecessary files │── .env # Environment variables (excluded from Git) │── Dockerfile # Docker build configuration │── main.py # FastAPI application code │── requirements.txt # Python dependencies │── README.md # Project documentation
+smtp-microservice/
+├── k8s/                     # Kubernetes configuration files
+│   ├── deployment.yaml      # Defines Kubernetes Deployment
+│   ├── service.yaml         # Service configuration (NodePort)
+│   ├── secret.yaml          # SMTP secrets (Base64 encoded)
+├── .gitignore               # Ignore unnecessary files
+├── .env                     # Environment variables (excluded from Git)
+├── Dockerfile               # Docker build configuration
+├── main.py                  # FastAPI application code
+├── requirements.txt         # Python dependencies
+└── README.md                # Project documentation
 ```
 
 ---
