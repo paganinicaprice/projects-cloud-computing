@@ -1,0 +1,31 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: smtp-service
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: smtp-service
+  template:
+    metadata:
+      labels:
+        app: smtp-service
+    spec:
+      containers:
+        - name: smtp-service
+          image: smtp-microservice  
+          imagePullPolicy: Never    
+          ports:
+            - containerPort: 8000
+          env:
+            - name: SMTP_USERNAME
+              valueFrom:
+                secretKeyRef:
+                  name: smtp-secret
+                  key: SMTP_USERNAME
+            - name: SMTP_PASSWORD
+              valueFrom:
+                secretKeyRef:
+                  name: smtp-secret
+                  key: SMTP_PASSWORD
