@@ -34,8 +34,9 @@ The application is containerized using Docker and managed with Docker Compose.
 
 ## **Project Structure**
 
-flask-postgres-app/ │── app/ # Flask application code │ ├── app.py # Main Flask app │ ├── requirements.txt # Python dependencies │── .env # Environment variables (excluded from Git) │── Dockerfile # Docker build configuration │── docker-compose.yml # Multi-container setup │── README.md # Project documentation
+flask-postgres-app/ ├── app/ # Flask application code │ ├── app.py # Main Flask app │ ├── requirements.txt # Python dependencies ├── .env # Environment variables (excluded from Git) ├── .gitignore # Ignore unnecessary files ├── Dockerfile # Docker build configuration ├── docker-compose.yml # Multi-container setup └── README.md # 
 
+Project documentation
 ---
 
 ## **How to Install and Run Locally**
