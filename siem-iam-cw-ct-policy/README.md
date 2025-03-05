@@ -33,7 +33,14 @@ SIEM Cloud Monitoring is a cloud-native solution designed to enhance security in
 
 ## Project Structure  
 ```md
-siem-cloud-monitoring/ ├── terraform/ │ ├── main.tf # Core Terraform configuration │ ├── cloudtraildef.tf # AWS CloudTrail setup │ ├── cloudwatchalarm.tf # CloudWatch Alarms setup │ ├── logs.tf # CloudWatch Logs configuration │ ├── bucketpolicy.tf # S3 security policies │ ├── .gitignore # Ignore Terraform state files │ └── variables.tf # Input variables for Terraform ├── images/ # Project screenshots ├── README.md # Project documentation
+siem-iam-cw-ct-policy/
+├── .gitignore             # Ignore Terraform state files
+├── bucketpolicy.tf        # S3 bucket security policies
+├── cloudtraildef.tf       # AWS CloudTrail configuration
+├── cloudwatchalarm.tf     # AWS CloudWatch Alarms
+├── logs.tf                # CloudWatch Logs configuration
+├── main.tf                # Main Terraform configuration
+
 ```
 
 ## How to Install and Run  
