@@ -1,0 +1,11 @@
+*.swp
+*.swo
+*.bak
+*.tmp
+
+.DS_Store
+Thumbs.db
+
+*.log
+
+*.retry

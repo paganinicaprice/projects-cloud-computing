@@ -1,0 +1,8 @@
+- name: Configure server with Ansible
+  hosts: localhost
+  connection: local
+  become: yes
+
+  roles:
+    - nginx
+
