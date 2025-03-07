@@ -1,0 +1,17 @@
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+venv/
+.env
+
+*.tar
+*.log
+docker-compose.override.yml
+docker-compose.yml.bak
+.DS_Store
+config.json
+
+.vscode/
+
+Thumbs.db
